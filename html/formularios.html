@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4 - HTML - Formularios </title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <section>
+    <form method="get">
+        <div> <!--Esto es una caja-->
+            <label form="nombre">Nombre:</label>
+            <input id="nombre"
+                   name="nombre">            
+        </div>
+        <hr>
+        <div>
+            <label>Edad</label>
+            <input type="number" 
+                    min="0"
+                    max="100"
+                    value="18">           
+        </div>
+        <hr>
+        <div>
+            <label for="fechaNac">Fecha de Nacimiento</label>
+            <input id="fechaNac"
+                   value="2000-01-01"
+                   type="date"
+                   name="fechaNac">
+        </div>
+        <hr>
+        <div>
+            <span>Turno</span>
+            <div>
+                <input type="radio"
+                   name="turno" 
+                   value="tarde" 
+                   checked>Tarde
+                <input type="radio"
+                   name="turno"
+                   value="manana">Mañana
+            </div>
+        </div>
+        <hr>
+        <div>
+            <label>Estudios: </label>
+            <span>Primaria</span>
+            <input type="checkbox"
+                   name="estudios"
+                   value="pri"
+                   checked>
+            <span>Secundaria</span>
+            <input type="checkbox"
+                   name="estudios"
+                   value="sec">            
+        </div>
+        <hr>
+        <div>
+            <label>Nacionalidad</label>
+            <select id="nacionalidad" 
+                    name="nacionalidad">
+                <option value="1">Arg</option>
+                <option value="2">Pry</option>
+                <option value="3">Chi</option>
+                <option value="4" selected>Br</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <label for="datosAdicionales">Datos adicionales</label>
+            <div>
+                <textarea id="datosAdicionales"
+                          name="datosAdicionales" 
+                          cols="50" 
+                          rows="5"></textarea>
+            </div>
+        </div>
+
+        <hr>
+        <div>
+            <label>CV</label>
+            <div>
+            <input type="file">
+            </div>
+        </div>
+
+        <hr>
+    <button>
+        Enviar
+    </button>
+
+    
+    <button type="reset">
+        Limpiar
+    </button>
+            
+    </form>
+    </section>
+
+    <section>
+        <h2>Login</h2>
+        <form>
+            <label>Usuario</label>
+            <input type="text" required>
+            <label>Contraseña</label>
+            <input type="password">
+            <button>
+                Login
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Reset Password</h2>
+        <form>
+            <label>Email</label>
+            <input type="email" required>
+            <button>
+                Reset
+            </button>
+        </form>
+    </section>
+
+
+    <section>
+        <form action="./resultado.html">
+            <h3>Buscar</h3>
+            <input type="search" name="q">
+            <button>Buscar</button>
+        </form>
+    </section>
+</body>
+</html>
